@@ -1,0 +1,52 @@
+/* Rotating encouragement for topics that don't have a simulation indexed yet. */
+window.SIMVERSE_QUOTES = [
+  { t: "The important thing is not to stop questioning. Curiosity has its own reason for existing.", a: "Albert Einstein" },
+  { t: "Tell me and I forget. Teach me and I remember. Involve me and I learn.", a: "Benjamin Franklin" },
+  { t: "I have not failed. I've just found 10,000 ways that won't work.", a: "Thomas A. Edison" },
+  { t: "The whole of science is nothing more than a refinement of everyday thinking.", a: "Albert Einstein" },
+  { t: "Education is not the learning of facts, but the training of the mind to think.", a: "Albert Einstein" },
+  { t: "It does not matter how slowly you go as long as you do not stop.", a: "Confucius" },
+  { t: "An investment in knowledge pays the best interest.", a: "Benjamin Franklin" },
+  { t: "Live as if you were to die tomorrow. Learn as if you were to live forever.", a: "Mahatma Gandhi" },
+  { t: "The mind is not a vessel to be filled, but a fire to be kindled.", a: "Plutarch" },
+  { t: "Science is a way of thinking much more than it is a body of knowledge.", a: "Carl Sagan" },
+  { t: "Nothing in life is to be feared, it is only to be understood.", a: "Marie Curie" },
+  { t: "The beautiful thing about learning is that nobody can take it away from you.", a: "B.B. King" },
+  { t: "Study without desire spoils the memory, and it retains nothing that it takes in.", a: "Leonardo da Vinci" },
+  { t: "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.", a: "Nikola Tesla" },
+  { t: "The only true wisdom is in knowing you know nothing.", a: "Socrates" },
+  { t: "One must still have chaos in oneself to be able to give birth to a dancing star.", a: "Friedrich Nietzsche" },
+  { t: "Somewhere, something incredible is waiting to be known.", a: "Carl Sagan" },
+  { t: "A teacher affects eternity; he can never tell where his influence stops.", a: "Henry Adams" },
+  { t: "The expert in anything was once a beginner.", a: "Helen Hayes" },
+  { t: "Research is to see what everybody else has seen, and to think what nobody else has thought.", a: "Albert Szent-Györgyi" },
+  { t: "Do not go where the path may lead, go instead where there is no path and leave a trail.", a: "Ralph Waldo Emerson" },
+  { t: "Genius is one percent inspiration and ninety-nine percent perspiration.", a: "Thomas A. Edison" },
+  { t: "The more that you read, the more things you will know. The more that you learn, the more places you'll go.", a: "Dr. Seuss" },
+  { t: "We are all in the gutter, but some of us are looking at the stars.", a: "Oscar Wilde" },
+  { t: "Real knowledge is to know the extent of one's ignorance.", a: "Confucius" },
+  { t: "Question everything. Learn something. Answer nothing.", a: "Euripides" },
+  { t: "The universe is under no obligation to make sense to you — but it keeps trying anyway.", a: "Neil deGrasse Tyson" },
+  { t: "Simplicity is the soul of efficiency.", a: "Austin Freeman" },
+  { t: "Wisdom is not a product of schooling but of the lifelong attempt to acquire it.", a: "Albert Einstein" },
+  { t: "What we know is a drop, what we don't know is an ocean.", a: "Isaac Newton" },
+  { t: "Learning never exhausts the mind.", a: "Leonardo da Vinci" },
+  { t: "In the middle of difficulty lies opportunity.", a: "Albert Einstein" },
+  { t: "A person who never made a mistake never tried anything new.", a: "Albert Einstein" },
+  { t: "Play is the highest form of research.", a: "Attributed to Albert Einstein" },
+  { t: "The advance of technology is based on making it fit in so that you don't really even notice it.", a: "Bill Gates" },
+  { t: "Science knows no country, because knowledge belongs to humanity.", a: "Louis Pasteur" },
+  { t: "You must be the change you wish to see in the world.", a: "Mahatma Gandhi" },
+  { t: "Strength does not come from physical capacity. It comes from an indomitable will.", a: "Mahatma Gandhi" },
+  { t: "Education is the most powerful weapon which you can use to change the world.", a: "Nelson Mandela" },
+  { t: "Arise, awake, and stop not till the goal is reached.", a: "Swami Vivekananda" }
+];
+
+/* Short "we're on it" copy, rotated per topic so a page never feels stale. */
+window.SIMVERSE_SOON_COPY = [
+  "Our team is curating the best simulation for this topic. It will appear here shortly.",
+  "No simulation matched our quality bar for this one yet — we're still hunting.",
+  "This subtopic is on our build list. Check back soon, or send us a good link.",
+  "We're validating a few candidate simulations for this topic before publishing them.",
+  "Coming soon — we'd rather link the right simulation than the first one we find."
+];
