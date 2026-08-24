@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SimVerse — Every simulation your syllabus needs</title>
+<meta name="description" content="SimVerse is a single index of interactive simulations for Class 9–12 Physics, Chemistry, Mathematics and Biology. Pick your class, subject and chapter — open the right simulation in one click.">
+<meta name="theme-color" content="#06080f">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2306080f'/><circle cx='16' cy='16' r='9' fill='none' stroke='%2322d3ee' stroke-width='2'/><circle cx='16' cy='16' r='3' fill='%2322d3ee'/></svg>">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#/" data-nav aria-label="SimVerse home">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="26" height="26">
+        <circle cx="16" cy="16" r="12" fill="none" stroke="url(#bg1)" stroke-width="1.4" opacity=".55"/>
+        <circle cx="16" cy="16" r="7" fill="none" stroke="url(#bg1)" stroke-width="1.4" opacity=".85"/>
+        <circle cx="16" cy="16" r="2.6" fill="var(--accent)"/>
+        <circle cx="28" cy="16" r="1.7" fill="var(--accent)"/>
+        <defs><linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/>
+        </linearGradient></defs>
+      </svg>
+    </span>
+    <span class="brand-text">Sim<em>Verse</em></span>
+  </a>
+
+  <button class="searchbar" id="searchTrigger" type="button" aria-label="Search simulations">
+    <svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM13.2 13.2L17 17"/></svg>
+    <span>Search any topic, chapter or simulation…</span>
+    <kbd>Ctrl</kbd><kbd>K</kbd>
+  </button>
+
+  <nav class="topnav" id="topnav">
+    <a href="#/progress" data-nav class="tnav" id="navProgress">
+      <span class="tnav-dot" aria-hidden="true"></span> Progress
+    </a>
+    <a href="#/platforms" data-nav class="tnav">Platforms</a>
+    <a href="#/about" data-nav class="tnav">About</a>
+  </nav>
+
+  <button class="icon-btn only-mobile" id="menuBtn" aria-label="Menu">
+    <svg viewBox="0 0 20 20" width="20" height="20"><path stroke="currentColor" stroke-width="1.7" d="M3 6h14M3 10h14M3 14h14" fill="none"/></svg>
+  </button>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<footer class="sitefoot">
+  <div class="foot-in">
+    <div>
+      <div class="foot-brand">Sim<em>Verse</em></div>
+      <p class="foot-note" id="footStats"></p>
+    </div>
+    <div class="foot-cols">
+      <div>
+        <span class="foot-h">Navigate</span>
+        <a href="#/class/9" data-nav>Class 9</a>
+        <a href="#/class/10" data-nav>Class 10</a>
+        <a href="#/class/11" data-nav>Class 11</a>
+        <a href="#/class/12" data-nav>Class 12</a>
+      </div>
+      <div>
+        <span class="foot-h">Explore</span>
+        <a href="#/platforms" data-nav>Platforms</a>
+        <a href="#/progress" data-nav>My progress</a>
+        <a href="#/about" data-nav>About SimVerse</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-base">
+    <span>Curated index of free &amp; open simulations · links open on the original platform</span>
+    <span>All simulation content belongs to its respective creators.</span>
+  </div>
+</footer>
+
+<div class="palette-backdrop" id="paletteBackdrop" hidden></div>
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Search simulations" hidden>
+  <div class="pal-input-row">
+    <svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM13.2 13.2L17 17"/></svg>
+    <input id="palInput" type="text" placeholder="Try “refraction”, “mole concept”, “trigonometry”…" autocomplete="off" spellcheck="false">
+    <kbd>esc</kbd>
+  </div>
+  <div class="pal-results" id="palResults"></div>
+  <div class="pal-foot"><span>↑↓ navigate</span><span>↵ open</span><span>esc close</span></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data/data.js"></script>
+<script src="js/quotes.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
